@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 172772 */
+    src: url('//at.alicdn.com/t/font_8j1v6p9id21hh0k9.eot');
+    src: url('//at.alicdn.com/t/font_8j1v6p9id21hh0k9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_8j1v6p9id21hh0k9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_8j1v6p9id21hh0k9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_8j1v6p9id21hh0k9.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:'iconfont'!important;
+    font-style:normal;
+    font-size: 12px;
+    color:#c40000;
+}
+a{
+    text-decoration: none;
+}
+.fullpage{
+    min-width:1230px;
+}
+nav{
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    color:#999;
+    height:32px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.nav-container{
+    position: relative;
+    width:1230px;
+    margin: 0 auto;
+}
+.nav-container a:link,.mybrand a:link,.mini-cart a:link{
+    color:#999;
+}
+.nav-container a:hover,.mybrand a:hover,.mini-cart a:hover{
+    color:#c40000;
+}
+.login-info{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+}
+.login-info .login{
+    padding: 0 10px 0 20px;
+}
+.login-info .register{
+    padding: 0 10px;
+}
+.quick-menu{
+    position: absolute;
+    top:0px;
+    right:0px;
+    height:32px;
+    line-height: 32px;
+}
+.quick-menu li{
+    display: inline-block;
+}
+li.myTaobao,li.favorite,li.support,li.sitemap{
+    position: relative;
+    padding: 0 10px;
+}
+li.myTaobao:hover,li.favorite:hover,li.support:hover{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+.myTaobao a:hover,.favorite a:hover,.support a:hover{
+    text-decoration:underline;
+}
+span.triangle{
+    width:0;
+    height:0;
+    border-top: 3px solid #999;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    position:absolute;
+    top:15px;
+    transition: .5s;
+}
+.myTaobao .triangle{
+    left:60px;
+}
+.favorite .triangle{
+    left:50px;
+}
+.support .triangle{
+    left:60px;
+}
+.sitemap .triangle{
+    left:77px;
+}
+.myTaobao:hover .triangle,.favorite:hover .triangle,.support:hover .triangle,.sitemap:hover .triangle{
+    transform: rotate(180deg);
+}
+.myTaobaoPanel{
+    position: absolute;
+    top:33px;
+    left:-1px;
+    width:74px;
+    padding: 8px 10px;
+    line-height: 1.4;
+    border: solid #eee;
+    border-width:0 1px 1px;
+    display: none;
+}
+li.myTaobao:hover .myTaobaoPanel,li.favorite:hover .favoritePanel,li.support:hover .supportPanel{
+    display: block;
+}
+.myTaobaoPanel a,.favoritePanel a{
+    display: inline-block;
+    margin-bottom: 2px;
+}
+.mybrand,.mini-cart,.mobile,.taobao,.companyBy,.support,.sitemap{
+    padding: 0 10px;
+}
+.favoritePanel{
+    position: absolute;
+    top:33px;
+    left:-1px;
+    width:60px;
+    padding: 8px 10px;
+    line-height: 1.4;
+    border: solid #eee;
+    border-width:0 1px 1px;
+    display: none;
+}
+.separator{
+    display: inline-block;
+    width: 0;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+    left: 0;
+    font-size: 0;
+    border-left: 1px solid #ccc;
+    margin: 0 2px 0 5px;
+}
+.mobile{
+    position: relative;
+}
+.mobilePanel{
+    position: absolute;
+    width: 175px;
+    height: 227px;
+    background: #fff;
+    left: -25px;
+    top: 32px;
+    box-shadow: 0 0 5px #aaa;
+    display: none;
+}
+.mobile:hover .mobilePanel{
+    display: block;
+}
+.tootip:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width:0;
+    height: 0;
+    top:-14px;
+    left:60px;
+    border-top:7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom:7px solid #fff;
+    border-left:7px solid transparent;
+}
+.mobilePanel .content{
+    background:url("../image/mobile1.png");
+    height: 175px;
+    position: relative;
+}
+.mobilePanel .content p{
+    position: absolute;
+    top:180px;
+    width:175px;
+    line-height: 35px;
+    background: url("../image/mobile2.png") no-repeat;
+    background-position: 50% 0%;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.supportPanel{
+    width:122px;
+    color:#666;
+    position: absolute;
+    top:33px;
+    right:-1px;
+    padding: 8px 10px;
+    line-height: 1.4;
+    border: solid #eee;
+    border-width:0 1px 1px;
+    display: none;
+}
+.supportPanel ul{
+    width:122px;
+    overflow: hidden;
+}
+.supportPanel h3{
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.supportPanel ul li.sellor{
+    padding:5px 0;
+    margin-right: -20px;
+}
+
+.supportPanel ul a{
+    display: inline-block;
+    width: 48px;
+    margin-right: 20px;
+    line-height: 22px;
+}
+.supportPanel ul li.help{
+    padding: 5px 0;
+    width:122px;
+    border-top:1px dotted #999;
+    border-bottom:1px dotted #999;
+}
+.sitemapPanel{
+    position: absolute;
+    top: 32px;
+    right:-1px;
+    display:block;
+    width:1198px;
+    padding: 25px 0;
+    overflow: hidden;
+    line-height:1.4;
+    border: solid #f5f5f5;
+    border-width: 0px 1px 1px;
+    display: none;
+}
+.sitemap:hover .sitemapPanel{
+    display: block;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.site-cont{
+    height:200px;
+    padding-left: 30px;
+    float: left;
+    /*margin-right: -20px;*/
+}
+.site-cont h2{
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-family: '\5FAE\8F6F\96C5\9ED1',arial,"\5b8b\4f53";
+    font-weight: 100;
+}
+.site-cont ul{
+    margin-right: -20px;
+}
+.site-list li{
+    width: 95px;
+    float: left;
+    padding: 6px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.site-list a:hover{
+    text-decoration: underline;
+}
+.site-hot{
+    width:275px;
+}
+.site-hot a:hover,.site-hot h2{
+    color:#f56a00;
+}
+.site-market a:hover,.site-market h2{
+    color:#2263d4;
+}
+.site-brand a:hover,.site-brand h2{
+    color:#2db739;
+}
+.site-help a:hover,.site-help h2{
+    color:#a322f4;
+}
+.site-market{
+    border-right: 1px solid #f5f5f5;
+    border-left:1px solid #f5f5f5;
+}
+.site-brand{
+    border-right:1px solid #f5f5f5;
+}
+
+.sitemap .sitemap-icon-new{
+    background: url("../image/sprite.png") no-repeat ;
+    background-position: -37px -11px;
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    top: -7px;
+    right: -9px;
+}
+.sitemap .site-list a{
+    position: relative;
+}
+.sitemap .sitemap-icon-hot{
+    background: url("../image/sprite.png") no-repeat ;
+    background-position: -37px 0px;
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    top: -7px;
+    right: -9px;
+}
+.site-market{
+    width:375px;
+}
+.site-brand{
+    width: 270px;
+}
+.site-help{
+    width:155px;
+}
