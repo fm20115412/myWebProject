@@ -66,7 +66,7 @@ li.myTaobao,li.favorite,li.support,li.sitemap{
     position: relative;
     padding: 0 10px;
 }
-li.myTaobao:hover,li.favorite:hover,li.support:hover{
+li.myTaobao:hover,li.favorite:hover,li.support:hover,li.sitemap:hover{
     background: #fff;
     border-bottom: 1px solid #fff;
 }
